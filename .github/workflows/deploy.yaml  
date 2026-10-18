@@ -6,7 +6,7 @@ defaults:
         working-directory: launchpad
 
 jobs:
-  rugaljobtest2:
+  rugaljobtest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -15,7 +15,7 @@ jobs:
       - run: npm run test
 
   deploy:
-    needs: rugaljobtest2
+    needs: rugaljobtest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
