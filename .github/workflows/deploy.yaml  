@@ -6,7 +6,7 @@ defaults:
         working-directory: launchpad
 
 jobs:
-  rugaljobtest:
+  rugaljobtest2:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
